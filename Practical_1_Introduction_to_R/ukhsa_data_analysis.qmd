@@ -1,0 +1,29 @@
+---
+title: "ukhsa_data_analysis.qmd"
+author: "Eleri"
+---
+```{r}
+library(tidyverse)
+library(gt)
+```
+
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+gt(head(rhinovirus))
+```
+Rhinovirus data
+```{r}
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+ggplot(rhinovirus)
+```
+```{r}
+ggplot(rhinovirus, aes(
+  x = date,
+  y = metric_value
+)) +
+  geom_line(colour = "black") +
+  xlab("Date") +
+  ylab("Percentage") +
+  ggtitle("Percentage of positive PCR test results for rhinovirus")
+```
+

@@ -1,0 +1,39 @@
+---
+title: "Practical 1 part 3"
+author: "Eleri"
+---
+```{r}
+round(3.14159)
+```
+```{r}
+print(rep(5,7))
+```
+```{r}
+print(rep(x = 5, times = 7))
+```
+```{r}
+a <- "Hello"
+print(a)
+print(class(a))
+```
+```{r}
+b <-14
+print(b)
+print(class(b))
+```
+```{r}
+c <- TRUE
+print(c)
+print(class(c))
+```
+```{r}
+cell_ID_1 <- "CX1"
+cell_ID_2 <- "CX2"
+treated_1 <- TRUE
+treated_2 <- FALSE
+num_cells_before_1 <- 5415
+num_cells_before_2 <- 8123
+num_cells_after_1 <- 1432
+num_cells_after_2 <- 7543
+```
+
